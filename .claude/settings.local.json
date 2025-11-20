@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(test:*)",
+      "Bash(nul)",
+      "Bash(dir /s /b package.json 2)",
+      "Bash(dir /s /b .cursorrules .cursorrules 2)",
+      "Bash(dir /s /b .githubcopilot-instructions.md 2)",
+      "Bash(node --version:*)",
+      "Bash(dir C:Android)",
+      "Bash(dir \"C:\\Android\")",
+      "Bash(npm run build:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git config:*)",
+      "Bash(if exist nul del nul)",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
