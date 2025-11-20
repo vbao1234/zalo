@@ -6,8 +6,8 @@ import {
   UpdateDateColumn,
   OneToMany,
 } from 'typeorm';
-import { Device } from './device.entity';
-import { Session } from './session.entity';
+import { Device } from '../../devices/entities/device.entity';
+import { Session } from '../../sessions/entities/session.entity';
 
 @Entity('users')
 export class User {

@@ -16,7 +16,19 @@
       "Bash(if exist nul del nul)",
       "Bash(git remote add:*)",
       "Bash(git branch:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(railway whoami:*)",
+      "Bash(railway status:*)",
+      "Bash(npx @react-native-community/cli@latest init:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(railway link:*)",
+      "Bash(railway init:*)",
+      "Bash(keytool:*)",
+      "Bash(./gradlew:*)",
+      "Bash(npm install:*)",
+      "Bash(java -version:*)",
+      "Bash(npm run start:dev:*)"
     ],
     "deny": [],
     "ask": []

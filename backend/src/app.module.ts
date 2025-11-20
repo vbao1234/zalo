@@ -11,6 +11,8 @@ import { SessionsService } from './modules/sessions/sessions.service';
 import { User } from './modules/users/entities/user.entity';
 import { Device } from './modules/devices/entities/device.entity';
 import { Session } from './modules/sessions/entities/session.entity';
+import { ZaloToken } from './modules/zalo-tokens/entities/zalo-token.entity';
+import { ZaloTokensModule } from './modules/zalo-tokens/zalo-tokens.module';
 
 @Module({
   imports: [
@@ -26,7 +28,7 @@ import { Session } from './modules/sessions/entities/session.entity';
         username: configService.get('DB_USERNAME', 'postgres'),
         password: configService.get('DB_PASSWORD', 'postgres'),
         database: configService.get('DB_NAME', 'zalo_account_manager'),
-        entities: [User, Device, Session],
+        entities: [User, Device, Session, ZaloToken],
         synchronize: true, // Chỉ dùng trong development
       }),
       inject: [ConfigService],
@@ -40,6 +42,7 @@ import { Session } from './modules/sessions/entities/session.entity';
       }),
       inject: [ConfigService],
     }),
+    ZaloTokensModule,
   ],
   controllers: [AuthController, DevicesController, SessionsController],
   providers: [AuthService, DevicesService, SessionsService],
